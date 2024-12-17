@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Mim - Meu Portfólio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            background-color: #0a0a0a;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        header {
+            background: #000814;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #00b4d8;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #00b4d8;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .info-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .education, .languages {
+            flex: 1;
+            text-align: left;
+        }
+
+        .education ul, .languages ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .education ul li, .languages ul li {
+            margin-bottom: 10px;
+        }
+
+        .education ul li::before, .languages ul li::before {
+            content: "🎓";
+            margin-right: 10px;
+            color: #00b4d8;
+        }
+
+        .languages ul li::before {
+            content: "🌐";
+        }
+
+        @media screen and (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .info-container {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="habilidades.html">Habilidades e Serviços</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h2>Sobre Mim</h2>
+        <p>Sou o Douglas, um estudante apaixonado por tecnologia e pelo aprendizado contínuo. A minha jornada começou com a curiosidade de entender como as coisas funcionam, o que me levou a explorar o mundo do desenvolvimento web e das tecnologias relacionadas.</p>
+        <p>Actualmente, dedico-me ao desenvolvimento de projectos no módulo de CPWE, utilizando HTML e CSS para criar designs funcionais e responsivos. A minha ambição é crescer como profissional e contribuir para projectos inovadores que tenham impacto positivo no mundo digital.</p>
+        <p>Para além da programação, tenho interesse em instalações eléctricas, ferramentas digitais e no aperfeiçoamento constante das minhas competências técnicas. No meu tempo livre, gosto de jogar futsal, explorar novas ideias criativas e aprender novas formas de aplicar a tecnologia no dia-a-dia.</p>
+        <p>Este portfólio é uma representação do meu percurso, habilidades e objectivos, reflectindo o meu empenho em tornar-me um desenvolvedor mais completo e versátil.</p>
+    </section>     
+
+    <section class="info-container">
+        <div class="education">
+            <h2>Formação</h2>
+            <ul>
+                <li><strong>2024 - ...</strong> Suporte de TI</li>
+                <li><strong>2023 - 2024</strong> Eletricidade Industrial</li>
+                <li><strong>2020 - 2022</strong> Ensino Secundário</li>
+                <li><strong>2013 - 2019</strong> Ensino Primário</li>
+            </ul>
+        </div>
+        <div class="languages">
+            <h2>Idiomas</h2>
+            <ul>
+                <li>Português - Fluente</li>
+                <li>Inglês - Fluente</li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>

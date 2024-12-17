@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Meu Portfólio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            background-color: #0a0a0a;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        header {
+            background: #000814;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #00b4d8;
+        }
+
+        .profile-section {
+            background-color: #000;
+            color: #fff;
+            padding: 60px 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .profile-text {
+            flex: 1;
+        }
+
+        .profile-text h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .profile-text p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .profile-image {
+            flex: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .profile-image img {
+            width: 250px;
+            border-radius: 10px;
+            border: 3px solid #1e90ff;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+            transition: transform 0.4s ease, box-shadow 0.4s ease;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #1e90ff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            font-weight: 600;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.4s ease;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #4682b4;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        @media screen and (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-image img {
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="habilidades.html">Habilidades e Serviços</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="profile-section">
+        <div class="profile-text">
+            <h1>Bem-vindo ao Meu Portfólio</h1>
+            <p>Sou o Douglas, um estudante apaixonado por tecnologia, a iniciar a minha caminhada no mundo do desenvolvimento web. O meu objectivo é transformar ideias em soluções criativas e funcionais, fazendo uso das melhores práticas do sector.</p>
+            <p>Actualmente, estou focado em utilizar CSS e HTML para desenvolver o meu projecto no módulo de CPWE, explorando formas de criar designs responsivos e atractivos que valorizem a experiência do utilizador.</p>
+            <p>Este portfólio reflete os meus aprendizados, projectos e sonhos, demonstrando o meu empenho em evoluir constantemente como desenvolvedor.</p>
+        </div>        
+        <div class="profile-image">
+            <img src="Douglas Imagem.jpg" alt="Minha Foto de Perfil">
+            <a href="Douglas Cv.docx" download>
+                <button class="btn">CV</button>
+            </a>
+        </div>
+    </section>
+</body>
+</html>

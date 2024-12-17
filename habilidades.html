@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habilidades e Serviços - Meu Portfólio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #ffffff;
+            background-color: #0a0a0a;
+            line-height: 1.6;
+            font-size: 16px;
+        }
+
+        header {
+            background: #000814;
+            padding: 0.8rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li {
+            margin: 0 1rem;
+        }
+
+        header nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header nav ul li a:hover {
+            color: #00b4d8;
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2rem;
+            border-bottom: 2px solid #00b4d8;
+            display: inline-block;
+            margin-bottom: 1.5rem;
+        }
+
+        .skills, .services {
+            margin-top: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill {
+            width: 100%;
+            max-width: 500px;
+            text-align: left;
+            margin: 10px;
+        }
+
+        .skill h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .bar {
+            background: #1a1a1a;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 12px;
+        }
+
+        .bar .fill {
+            background: #00b4d8;
+            height: 100%;
+            transition: width 0.5s ease-in-out; /* Transição suave */
+        }
+
+        .service-card {
+            background-color: #1a1a1a;
+            border: 1px solid #00b4d8;
+            border-radius: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .service-card img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 15px;
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #ccc;
+        }
+
+        @media screen and (max-width: 768px) {
+            header nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills, .services {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .service-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="habilidades.html">Habilidades e Serviços</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="contato.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <h2>Habilidades</h2>
+        <p>Minhas principais habilidades:</p>
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+                <div class="bar"><div class="fill" style="width: 80%;"></div></div>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+            <div class="skill">
+                <h3>Instalações Elétricas</h3>
+                <div class="bar"><div class="fill" style="width: 90%;"></div></div>
+            </div>
+            <div class="skill">
+                <h3>Futsal</h3>
+                <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            </div>
+            <div class="skill">
+                <h3>Pacotes Microsoft</h3>
+                <div class="bar"><div class="fill" style="width: 70%;"></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Serviços</h2>
+        <p>Os serviços que ofereço incluem:</p>
+        <div class="services">
+            <div class="service-card">
+                <img src="Manutenção de Hardware.jpg" alt="Manutenção de hardware">
+                <h3>Manutenção de Hardware</h3>
+                <p>Reparo e manutenção de computadores e dispositivos.</p>
+            </div>
+            <div class="service-card">
+                <img src="Instalação e Configuração de Software.jpg" alt="Instalação de software">
+                <h3>Instalação de Software</h3>
+                <p>Configuração e suporte a softwares básicos e avançados.</p>
+            </div>
+            <div class="service-card">
+                <img src="Resolução de Problemas Básicos.jpg" alt="Resolução de problemas">
+                <h3>Resolução de Problemas</h3>
+                <p>Diagnóstico e solução de problemas em computadores.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
